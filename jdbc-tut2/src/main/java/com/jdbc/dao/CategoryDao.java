@@ -9,12 +9,12 @@ public class CategoryDao extends AbstractDao<Category> {
 
 	@Override
 	protected String insertSql() {
-		return "insert into category(c_name) value(?)";
+		return "insert into category(name) value(?)";
 	}
 
 	@Override
 	protected String updateSql() {
-		return "update category set c_name = ? where c_id = ?";
+		return "update category set name = ? where id = ?";
 	}
 
 	@Override
@@ -24,7 +24,7 @@ public class CategoryDao extends AbstractDao<Category> {
 
 	@Override
 	protected String deleteSql() {
-		return "delete from categroy where c_id = ?";
+		return "delete from categroy where id = ?";
 	}
 
 	@Override
