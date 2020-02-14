@@ -24,7 +24,7 @@ public class CategoryDao extends AbstractDao<Category> {
 
 	@Override
 	protected String deleteSql() {
-		return "delete from categroy where id = ?";
+		return "delete from category where id = ?";
 	}
 
 	@Override
